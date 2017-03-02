@@ -1,0 +1,37 @@
+pre code {
+  cursor: pointer; }
+  pre code:hover {
+    background-color: green; }
+
+.card {
+  margin: 8px;
+  background-color: #dedede;
+  padding: 8px;
+  border-radius: 5px;
+  width: fit-content; }
+  .card .msg,
+  .card pre,
+  .card code {
+    font-size: .85em; }
+  .card pre {
+    margin: 0 0 .4em 0; }
+  .card .msg {
+    float: right;
+    margin-bottom: 0; }
+    .card .msg.hover {
+      color: green; }
+    .card .msg.click {
+      color: darkred; }
+
+.title {
+  font-weight: bold; }
+
+/* FLEX */
+main {
+  align-items: self-start;
+  flex-wrap: wrap;
+  display: flex; }
+  main .card {
+    flex: 1 1 auto; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+pre code {
+ cursor: pointer;
+  &:hover {
+    background-color: green;
+
+  }
+}
+
+.card{
+  margin: 8px;
+  background-color: #dedede;
+  padding:8px;
+  border-radius: 5px;
+
+  width: fit-content;
+
+  .msg,
+  pre,
+  code{
+    font-size: .85em;
+  }
+
+  pre{
+    margin:0 0 .4em 0 ;
+  }
+
+  .msg{
+    float: right;
+    margin-bottom: 0;
+    //font-size: 10px;
+    &.hover{
+      color: green;
+    }
+
+    &.click{
+      color: darkred;
+    }
+  }
+}
+.title{
+  font-weight: bold;
+}
+
+/* FLEX */
+main{
+  align-items: self-start;
+  flex-wrap: wrap;
+  display: flex;
+  .card{
+    flex: 1 1 auto;
+  }
+}
+
