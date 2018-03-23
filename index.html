@@ -26,14 +26,51 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
   <main class="">
+    <div class="card">
+      <div class="title">GZ - single file</div>
+      <pre>compress <code class="bash">gzip filename</code></pre>
+      <pre>extract <code class="bash">gzip -d filename</code></pre>
+    </div>
+
+    <div class="card">
+      <div class="title">TAR.GZ</div>
+      <pre>compress <code class="bash">tar -zcvf archive.tar.gz folder</code></pre>
+      <pre>extract <code class="bash">tar -zxvf archive.tar.gz</code></pre>
+    </div>
+
+    <div class="card">
+      <div class="title">TAR.BZ2</div>
+      <pre>compress <code class="bash">tar -jcvf archive.tar.gz folder</code></pre>
+      <pre>extract <code class="bash">tar -jxvf archive.tar.gz</code></pre>
+    </div>
+
     <div class="card">
       <div class="title">ZIP</div>
       <pre>compress <code class="bash">zip -r archive.zip folder</code></pre>
       <pre>extract <code class="bash">unzip archive.zip</code></pre>
     </div>
+
+    <div class="card">
+      <div class="title">MYSQL</div>
+      <pre>backup<code class="bash">mysqldump -u root -p[password] [db_name] > dump.sql</code></pre>
+      <pre>restore<code class="bash">mysql -u root -p[password] [db_name] < dump.sql</code></pre>
+    </div>
+<!--
+
+    <div class="card">
+      <div class="title">MYSQL</div>
+      <pre> <code class="bash"> </code></pre>
+      <pre> <code class="bash"> </code></pre>
+    </div>
+-->
+
+
+
   </main>
+
+
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
