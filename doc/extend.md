@@ -441,7 +441,7 @@ following the [Open Graph
 tutorial](https://developers.facebook.com/docs/sharing/webmasters/getting-started).
 
 For a reference of Open Graph's markup and properties, you may check
-[Facebook's Open Graph Protocol reference](http://ogp.me/). Finally,
+[Facebook's Open Graph Protocol reference](https://ogp.me). Finally,
 you can validate your markup with the [Facebook Object
 Debugger](https://developers.facebook.com/tools/debug/) (needs
 registration to Facebook).
@@ -476,11 +476,10 @@ and you can validate your markup with the [Card validator](https://cards-dev.twi
 <meta name="twitter:image" content="https://www.example.com/path/to/image.jpg">
 ```
 
-### Google+ / Schema.org
+### Schema.org
 
 Google also provides a snippet specification that serves a similar
-purpose to Facebook's Open Graph or Twitter Cards. While it helps you
-to control information displayed on Google+, this metadata is a subset
+purpose to Facebook's Open Graph or Twitter Cards. This metadata is a subset
 of [schema.org's microdata vocabulary](https://schema.org/), which
 covers many other schemas that can describe the content of your pages
 to search engines. For this reason, this metadata is more generic for
@@ -493,7 +492,7 @@ Also, please note that this markup requires to add attributes to your
 top `html` tag.
 
 ```html
-<html class="no-js" lang="" itemscope itemtype="http://schema.org/Article">
+<html class="no-js" lang="" itemscope itemtype="https://schema.org/Article">
     <head>
 
         <link rel="author" href="">

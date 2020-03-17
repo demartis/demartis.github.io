@@ -84,7 +84,7 @@ example, a <Directory> section in the main configuration file. This is usually
 the recommended way, as using .htaccess files slows down Apache!
 
 To enable Apache modules locally, please see:
-https://github.com/h5bp/server-configs-apache/wiki/How-to-enable-Apache-modules.
+https://github.com/h5bp/server-configs-apache#enable-apache-httpd-modules.
 
 In the repo the `.htaccess` is used for:
 
@@ -137,7 +137,7 @@ you want to block access to private content, use proper authentication instead.
 
 For more information about `robots.txt`, please see:
 
-  * [robotstxt.org](http://www.robotstxt.org/)
+  * [robotstxt.org](https://www.robotstxt.org/)
   * [How Google handles the `robots.txt` file](https://developers.google.com/webmasters/control-crawl-index/docs/robots_txt)
 
 ## humans.txt
