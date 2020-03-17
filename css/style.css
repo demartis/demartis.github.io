@@ -1,37 +1,58 @@
 pre code {
-  cursor: pointer; }
-  pre code:hover {
-    background-color: green; }
+  cursor: pointer;
+}
+pre code:hover {
+  background-color: green;
+}
 
 .card {
   margin: 8px;
   background-color: #dedede;
   padding: 8px;
   border-radius: 5px;
-  width: fit-content; }
-  .card .msg,
-  .card pre,
-  .card code {
-    font-size: .85em; }
-  .card pre {
-    margin: 0 0 .4em 0; }
-  .card .msg {
-    float: right;
-    margin-bottom: 0; }
-    .card .msg.hover {
-      color: green; }
-    .card .msg.click {
-      color: darkred; }
+  width: fit-content;
+}
+.card .msg,
+.card pre,
+.card code {
+  font-size: 0.85em;
+}
+.card pre {
+  margin: 0 0 0.4em 0;
+  position: relative;
+}
+.card .msg {
+  float: right;
+  margin-bottom: 0;
+  position: absolute;
+  text-align: right;
+  right: 0;
+  line-height: 19px;
+}
+.card .msg.hover {
+  color: green;
+  background: rgba(222, 222, 222, 0.85);
+  padding-left: 10px;
+  margin: 0 0 0.4em 0;
+  z-index: 10;
+}
+.card .msg.click {
+  color: darkred;
+  z-index: 9;
+}
 
 .title {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* FLEX */
 main {
   align-items: self-start;
   flex-wrap: wrap;
-  display: flex; }
-  main .card {
-    flex: 1 1 auto; }
+  display: flex;
+}
+main .card {
+  flex: 1 1 auto;
+}
 
 /*# sourceMappingURL=style.css.map */

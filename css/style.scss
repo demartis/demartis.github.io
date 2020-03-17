@@ -22,21 +22,34 @@ pre code {
 
   pre{
     margin:0 0 .4em 0 ;
+    position: relative;
   }
 
   .msg{
     float: right;
     margin-bottom: 0;
     //font-size: 10px;
+    position: absolute;
+    //width: 100%;
+    text-align: right;
+    right: 0;
+    line-height: 19px;
+
     &.hover{
       color: green;
+      background: rgba(222,222,222, .85);
+      padding-left: 10px;
+      margin:0 0 .4em 0 ;
+      z-index: 10;
     }
 
     &.click{
       color: darkred;
+      z-index: 9;
     }
   }
 }
+
 .title{
   font-weight: bold;
 }
