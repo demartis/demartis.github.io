@@ -37,6 +37,18 @@ $(document).ready(function(){
             $("div.msg.click").remove();
             $(this).parent().prepend('<div class="msg click">copied!</div>');
         });
+
+
+    $('#filter').keyup(function (e){
+        let val=$.trim($(e.originalEvent.target).val().toLowerCase());
+
+        $("main .card").filter(function() {
+            $(this).toggle($(this).find('.title, .label, code').text().toLowerCase().indexOf(val) > -1)
+
+        });
+
+    });
+
 });
 
 
