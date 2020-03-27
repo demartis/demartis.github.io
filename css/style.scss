@@ -4,7 +4,7 @@ body{
 }
 
 pre code {
- cursor: pointer;
+  cursor: pointer;
   &:hover {
     background-color: green;
 
@@ -85,8 +85,8 @@ header{
 }
 
 
-/* BOOTSTRAP-LIKE components  */
 
+/* BOOTSTRAP-LIKE components  */
 
 .right{
   float: right;
@@ -102,7 +102,7 @@ header{
   font-size: 75%;
   //font-weight: 700;
   line-height: 1;
-  //color: #fff;
+  color: #efefef;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -127,10 +127,13 @@ header{
   background-color: #f0ad4e;
 }
 .label-danger {
-   background-color: #d9534f;
+  background-color: #d9534f;
 }
 
+
+
 /* FLEX */
+
 header .container,
 main{
   align-items: self-start;
@@ -141,5 +144,4 @@ main{
     flex: 1 1 auto;
   }
 }
-
 
