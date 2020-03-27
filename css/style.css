@@ -1,3 +1,7 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 pre code {
   cursor: pointer;
 }
@@ -5,11 +9,15 @@ pre code:hover {
   background-color: green;
 }
 
+.container,
 .card {
   margin: 8px;
   background-color: #dedede;
   padding: 8px;
   border-radius: 5px;
+}
+
+.card {
   width: fit-content;
 }
 .card .msg,
@@ -40,6 +48,10 @@ pre code:hover {
   color: darkred;
   z-index: 9;
 }
+.card .container-label {
+  margin-top: -4px;
+  float: right;
+}
 
 .title {
   font-weight: bold;
@@ -51,6 +63,56 @@ header .container {
 header .title {
   font-size: 1.5em;
 }
+
+.box {
+  margin: auto;
+}
+
+/* BOOTSTRAP-LIKE components  */
+.right {
+  float: right;
+}
+
+.label {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.label {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  background-color: #777;
+}
+
+.label-success {
+  background-color: #5cb85c;
+}
+
+.label-default {
+  background-color: #777;
+}
+
+.label-primary {
+  background-color: #337ab7;
+}
+
+.label-info {
+  background-color: #5bc0de;
+}
+
+.label-warning {
+  background-color: #f0ad4e;
+}
+
+.label-danger {
+  background-color: #d9534f;
+}
+
 /* FLEX */
 header .container,
 main {

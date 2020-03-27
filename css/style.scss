@@ -1,3 +1,8 @@
+body{
+
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 pre code {
  cursor: pointer;
   &:hover {
@@ -6,11 +11,16 @@ pre code {
   }
 }
 
-.card{
+.container,
+.card {
   margin: 8px;
   background-color: #dedede;
-  padding:8px;
+  padding: 8px;
   border-radius: 5px;
+
+}
+
+.card{
 
   width: fit-content;
 
@@ -48,19 +58,88 @@ pre code {
       z-index: 9;
     }
   }
+
+  .container-label{
+    margin-top:-4px;
+    float: right;
+  }
+
 }
 
 .title{
   font-weight: bold;
 }
 
+header{
+  .container{
+
+    padding: 20px;
+  }
+  .title{
+    font-size: 1.5em;
+  }
+}
+
+.box{
+  margin: auto;
+}
+
+
+/* BOOTSTRAP-LIKE components  */
+
+
+.right{
+  float: right;
+}
+
+.label {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.label{
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  //font-weight: 700;
+  line-height: 1;
+  //color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+
+  background-color: #777;
+}
+
+.label-success {
+  background-color: #5cb85c;
+}
+.label-default {
+  background-color: #777;
+}
+.label-primary {
+  background-color: #337ab7;
+}
+.label-info {
+  background-color: #5bc0de;
+}
+.label-warning {
+  background-color: #f0ad4e;
+}
+.label-danger {
+   background-color: #d9534f;
+}
+
 /* FLEX */
+header .container,
 main{
   align-items: self-start;
   flex-wrap: wrap;
   display: flex;
+  .box,
   .card{
     flex: 1 1 auto;
   }
 }
+
 

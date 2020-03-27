@@ -1,12 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -41,31 +41,46 @@
 
   <main class="">
     <div class="card">
-      <div class="title">GZ - single file</div>
+      <span class="title">GZ - single file</span>
+      <span class="container-label">
+        <span class="label">pack</span>
+      </span>
       <pre>compress <code class="bash">gzip filename</code></pre>
       <pre>extract <code class="bash">gzip -d filename</code></pre>
     </div>
 
     <div class="card">
-      <div class="title">TAR.GZ</div>
+      <span class="title">TAR.GZ</span>
+      <span class="container-label">
+        <span class="label">pack</span>
+      </span>
       <pre>compress <code class="bash">tar -zcvf archive.tar.gz folder</code></pre>
       <pre>extract <code class="bash">tar -zxvf archive.tar.gz</code></pre>
     </div>
 
     <div class="card">
-      <div class="title">TAR.BZ2</div>
+      <span class="title">TAR.BZ2</span>
+      <span class="container-label">
+        <span class="label">pack</span>
+      </span>
       <pre>compress <code class="bash">tar -jcvf archive.tar.gz folder</code></pre>
       <pre>extract <code class="bash">tar -jxvf archive.tar.gz</code></pre>
     </div>
 
     <div class="card">
-      <div class="title">ZIP</div>
+      <span class="title">ZIP</span>
+      <span class="container-label">
+        <span class="label">pack</span>
+      </span>
       <pre>compress <code class="bash">zip -r archive.zip folder</code></pre>
       <pre>extract <code class="bash">unzip archive.zip</code></pre>
     </div>
 
     <div class="card">
-      <div class="title">MYSQL</div>
+      <span class="title">MYSQL</span>
+      <span class="container-label">
+        <span class="label">backup</span>
+      </span>
       <pre>backup<code class="bash">mysqldump -u root -p[password] [db_name] > dump.sql</code></pre>
       <pre>restore<code class="bash">mysql -u root -p[password] [db_name] < dump.sql</code></pre>
     </div>
